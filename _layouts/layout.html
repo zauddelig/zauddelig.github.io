@@ -6,32 +6,17 @@
     <meta name="author" content="Your Name" />
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet">
     <link href="/static/css/style.css" rel="stylesheet">
-    <title>Zauddelig blog</title>
+    <title>{{ page.title }}</title>
   </head>
   <body>
     <header>
-      <h1><a href="/">Zauddelig blog</a></h1>
+      <h1><a href="/">{{ page.title }}</a></h1>
     </header>
     <nav>
         
     </nav>
     <section>
-      <div class="content">
-  <div class="related">
-    <ul>
-      
-      <li>
-      <h1> <a href="/2014/04/22/ciao-mondo">Ciao mondo!</a> </h1>
-	<p>Questo è il primo post del mio primo blog in jekyll. Mi chiamo Fabrizio Ettore
-Messina, vi faccio un breve riassunto:</p>
-
-	<span>April 22, 2014</span>
-      </li>
-      
-    </ul>
-  </div>
-</div>
-
+      {{ content }}
     </section>
     <script src="//netdna.bootstrapcdn.com/bootstrap/3.1.1/js/bootstrap.min.js"></script>
   </body>
