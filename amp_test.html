@@ -14,16 +14,17 @@
       margin: 1rem;
     }
   </style>
-  <amp-state id="myLocalState">
+
+
+</head>
+<body>
+    <amp-state id="myLocalState">
   <script type="application/json">
     {
       "foo": "bar"
     }
   </script>
 </amp-state>
-
-</head>
-<body>
   <h1>Hello AMPHTML World!</h1>
   <button on="tap:AMP.printState()">test</button>
   <a href="/example.com?client_id=CLIENT_ID(bar)&abc=QUERY_PARAM(abc)" data-amp-replace="CLIENT_ID QUERY_PARAM">Go to my site</a>
