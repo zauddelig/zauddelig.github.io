@@ -27,7 +27,6 @@
 </amp-state>
   <h1>Hello AMPHTML World!</h1>
   <button on="tap:AMP.printState()">test</button>
-  <p [text]="'Hello ' + QUERY_PARAM(abc)"><ciao</p>
-  <a href="/example.com?client_id=CLIENT_ID(bar)&abc=QUERY_PARAM(abc)" data-amp-replace="CLIENT_ID QUERY_PARAM">Go to my site</a>
+  <a href="/QUERY_PARAM(abc)" data-amp-replace="CLIENT_ID QUERY_PARAM">Go to my site</a>
 </body>
 </html>
