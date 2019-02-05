@@ -26,7 +26,6 @@
   </script>
 </amp-state>
   <h1>Hello AMPHTML World!</h1>
-  <amp-bind-macro id="addGclid" arguments="url param" expression="url.indexOf('?')==-1?url+'?gclid='+gclid:url+'&gclid='+gclid"></amp-bind-macro>
-  <a [href]="addGclid(QUERY_PARAM(abc)/CLIENT_ID(ga), QUERY_PARAM(gclid))" data-amp-replace="CLIENT_ID QUERY_PARAM">Go to my site</a>
+  <a href="/?QUERY_PARAM(gclid)" data-amp-replace="CLIENT_ID QUERY_PARAM">Go to my site</a>
 </body>
 </html>
